@@ -1,0 +1,80 @@
+.noDisplay
+{
+  display:none !important;
+}
+.float-left
+{
+  float:left;
+}
+.customerOverviewFooter
+{
+  margin:15px 0px 15px 0px ;
+  display: inline-flex;
+    width: 78%;
+    margin-left: 30px;
+}
+.valueClass
+{
+  font-weight: bold;
+}
+.lableClass
+{
+  font-size:10px;
+
+}
+.tc-indigo-500 {
+    color: gray !important;
+}
+.iconsDesign:first-child .lineStraight 
+{
+  display:none;
+}
+.iconsDesign:first-child 
+{
+  width:auto;
+}
+.padding-zero
+{
+  padding:0;
+}
+.iconLabel
+{
+         text-align: right;
+    display: block;
+    width: 83%;
+}
+.customerCentiment li:hover
+{
+  background-color: #f0f5f5;
+  cursor: pointer;
+
+
+}
+.row
+{
+  display:inline-block;
+  width:100%;
+
+}
+.iconsDesign
+{
+  display:inline-block;
+  width: 8%;
+    position: relative;
+    left: 30px;
+}
+
+span.lineStraight {
+  display: block;
+   
+    border: 1px solid #ccc;
+   height:0px;
+    top: 20px;
+    position: relative;
+    left: 0px;
+        margin: 0px 3px 0px 3px;
+}
+.icon {
+  display: inline-block !important;
+  font-size:40px;
+}

@@ -1,0 +1,99 @@
+.md-tab-label md-tab-active{
+
+    color: orangered;
+}
+
+.md-tab-label{
+
+    color: orangered;
+}
+
+.WebSection
+{
+   background-image: url(../../../assets/icons/webbackground.png);
+    width: 90%;
+    height: 718px;
+    position: relative;
+    left: 5%;
+    border: 1px black;
+    display: inline-block;
+    background-size: 97% 99%;
+    border-bottom: 4px black;
+    background-repeat: no-repeat;
+
+    /* background-position: 6px -176px; */
+}
+.sampleImage
+{
+        width: 34%;
+    height: 32%;
+    border: 8px black;
+    position: relative;
+    left: 119px;
+    top: 183px;
+}
+.sampleImageMobile
+{
+     width: 49%;
+    height: 21%;
+    border: 8px black;
+    position: relative;
+    left: 25%;
+    top: 15%;
+    display: inline-block;
+
+}
+.webContainerText
+{
+    float: right;
+    display: inline-block;
+    width: 36%;
+    position: relative;
+    right: 17%;
+    top: 24%;
+
+}
+.mobilesection
+{
+
+   
+
+    background-image: url(../../../assets/icons/mobileBackground.png);
+    width: 60%;
+    height: 97%;
+    position: relative;
+    left: 17%;
+    border: 1px black;
+    display: inline-block;
+    background-size: 97% 99%;
+    border-bottom: 4px black;
+    background-repeat: no-repeat;
+}
+
+
+.mobileContentText{
+   float: right;
+    display: block;
+    width: 52%;
+    position: relative;
+    right: 23%;
+    top: 16%;
+
+}
+
+.webData{
+    display: -webkit-inline-box;
+    
+}
+.md-subhead td-expansion-primary{
+
+    max-width: none !important;
+   
+}
+.td-expansion-primary{
+    margin-right: -35px !important;
+}
+.md-padding {
+    
+    background-color: lightgrey;
+}

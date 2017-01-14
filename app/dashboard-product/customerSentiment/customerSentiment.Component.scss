@@ -1,0 +1,39 @@
+.md2 md-toolbar md-bgc-grey-200{
+
+    height: 20px;
+}
+
+a:focus { 
+   border-bottom:#3385ff 3px solid;
+
+}
+.navigationLink
+{
+    background-color:rgba(255, 255, 255, 0.87);
+}
+.floatRight
+{
+    float:right;
+    position: relative;
+    top:7px;
+}
+.display
+{
+    display:none;
+}
+.icons{
+    position:relative;
+    top:5px;
+    padding:0px 3px 0px 3px;
+}
+.analysishighlight,.Ruleshighlight
+{
+    border-bottom:#3385ff 3px solid;
+
+}
+.navigationLink a
+{
+    font-size: 16px;
+   
+    color:#3385ff;
+}

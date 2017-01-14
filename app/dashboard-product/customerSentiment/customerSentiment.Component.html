@@ -1,0 +1,51 @@
+<nav md-tab-nav-bar class="navigationLink">
+  <a md-tab-link [class.analysishighlight]="analysis" (click)="AnalysisCheck()"
+     
+      [routerLink]="['customercentimentdetails']"
+     routerLinkActive ="routerLinkActive"
+     [active]="isActive" autofocus> 
+   Analysis
+  </a>
+  <a md-tab-link
+     (click)="Rules()"
+      [routerLink]="['link']"
+     routerLinkActive="routerLinkActive"
+     [active]="isActive"  [class.Ruleshighlight]="rules">
+    
+   Rules
+  </a>
+  <span flex="20"></span>
+  <div flex="70">
+  <span flex  class="floatRight push-right push-left"><md-icon class="icons">refresh</md-icon>Refresh</span>
+  <span flex [class.display]="check" class="floatRight push-right push-left"><md-icon  class="icons">perm_data_setting</md-icon>Data Check</span>
+ <span flex [class.display]="check" class="floatRight push-right push-left"><md-icon  class="icons">launch</md-icon>Export</span>
+   <span flex [class.display]="check" class="floatRight push-right push-left"><md-icon class="icons">import_export</md-icon>Import</span>
+ 
+  </div>
+  
+  
+</nav>
+
+<div flex-gt-xs="80" >
+
+ <router-outlet></router-outlet>
+   
+    <md-card [class.display]="!check" >
+        <md-divider></md-divider>
+        <md-card-content >
+            <md-card-title>Analysis</md-card-title>
+            <!--<button md-button [mdMenuTriggerFor]="posXMenu">
+Before
+</button>
+            <md-menu x-position="before" #posXMenu="mdMenu" class="before">
+                <button md-menu-item> Refresh </button>
+                <button md-menu-item> Settings </button>
+                <button md-menu-item> Help </button>
+                <button md-menu-item disabled> Sign Out </button>
+            </md-menu>-->
+            <md-divider></md-divider>
+            <td-paging-bar [pageSizes]="[5, 10, 15, 20]" [total]="filteredTotal" (change)="page($event)"></td-paging-bar>
+        </md-card-content>
+
+    </md-card>
+</div>

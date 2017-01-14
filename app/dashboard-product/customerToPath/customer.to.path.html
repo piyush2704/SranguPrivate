@@ -1,0 +1,21 @@
+<ul class="padding-zero customerCentiment">
+  <li class="row" *ngFor="let icons of Icons" [routerLink]="['/main/userSessions']">
+    <div class=" iconsDesign" *ngFor="let icon of icons.keys">
+      <div layout="row">
+      <span flex="40" class="lineStraight"></span>
+      <md-icon flex="60" class="icon custom-icon tc-grey-500">{{icon.value}}</md-icon>
+      </div>
+
+      <span class=" iconLabel tc-indigo-500">{{icon.label}}</span>
+
+    </div>
+    <div flex="100" class="customerOverviewFooter">
+      <span flex="10" class="float-left">
+<span class="row valueClass">{{icons.totalRevenue|currency:'USD':true}}</span> <span class="row lableClass">Total Revenue</span>
+      </span><span flex="10" class="<float></float>-left">
+<span class="row valueClass">{{icons.days}} days</span> <span class="row lableClass">Duration</span>
+      </span>
+    </div>
+    <md-divider></md-divider>
+  </li>
+</ul>
