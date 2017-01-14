@@ -1,0 +1,11 @@
+
+<ul class="row">
+  <li  class="section" *ngFor="let insight of Insights">
+    <div class="row">
+      <img class="insight-image" [src]="insight.image"><span class="imageSpanClass">{{insight.imageTag}}</span>
+    </div>
+    <div class="row ">
+      <span class="insightContent">{{insight.content}}</span>
+    </div>
+  </li>
+</ul>

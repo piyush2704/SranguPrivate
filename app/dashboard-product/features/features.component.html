@@ -1,0 +1,70 @@
+<div layout="column" layout-gt-sm="row">
+    <div flex-gt-xs="70">
+        <md-card>
+            <md-card-title>Top 3 Customer Paths to Purchases
+                <div class="attributelist">
+                    <select class="atributeSelect">
+<option>Purchase</option>
+<option>Add to cart</option>
+<option>Add Payment Info</option>
+<option>Add TO Shipping</option>
+<option>Click Ad</option>
+<option>Click Email</option>
+<option>Open Email</option>
+<option>Purchase</option>
+<option>Signup </option>
+<option>Social Mention</option>
+<option>Thank You Page</option>
+<option>View Website</option></select>
+                    <select class="atributeSelect">
+<option>All Channels</option>
+<option>Email</option>
+<option>Social</option>
+<option>Web</option>
+<option>Ad</option>
+<option>Paid Search</option>
+<option>Organic Search</option></select>
+                    <select class="atributeSelect">
+<option>To</option>
+<option>From</option></select>
+                    <select class="atributeSelect">
+<option>All Channels</option>
+<option>Email</option>
+<option>Social</option>
+<option>Web</option>
+<option>Ad</option>
+<option>Paid Search</option>
+<option>Organic Search</option></select>
+</div>
+            </md-card-title>
+            <md-card-subtitle>Click on paths to view users sessions</md-card-subtitle>
+            <md-divider class="section-divider"></md-divider>
+            <customer-path></customer-path>
+            <md-divider class="section-divider"></md-divider>
+            <td-paging-bar [pageSizes]="[5, 10, 15, 20]" [total]="filteredTotal" (change)="page($event)"></td-paging-bar>
+        </md-card>
+    </div>
+
+ <div layout="column" layout-gt-xs="row">
+        <div flex-gt-xs="20">
+            <md-card>
+        <md-card-title>Events</md-card-title>
+        <md-card-subtitle>Explore the events</md-card-subtitle>
+        <td-search-box placeholder="Search here" (searchDebounce)="search($event)" flex>
+        </td-search-box>
+        <md-divider></md-divider>
+          <td-expansion-panel label="Label goes here" expand="true" [disabled]="disabled">
+                <template td-expansion-panel-label>
+                    <md-icon>tag_faces</md-icon>
+                    <span>Landing Page</span>
+                </template>
+                <div class="md-padding">
+                    <h3 class="md-subhead">Scroll Up</h3>
+                    <h3 class="md-subhead">scroll Down</h3>
+                    <h3 class="md-subhead">Clicked on Product Image</h3>
+                  
+                </div>
+            </td-expansion-panel>
+    </md-card>
+    
+</div>

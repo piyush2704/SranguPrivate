@@ -1,0 +1,11 @@
+
+
+        <td-charts [shadow]="true" fillOpacity="0.95">
+            <td-axis-x [link]="chartBar1" [ticks]="true" [show]="true" [grid]="true"></td-axis-x>
+            <td-axis-y-right [link]="chartBar1" [show]="true" [grid]="true"></td-axis-y-right>
+            <td-chart-bar #chartBar1 [colors]="['orange', 'orange']" [data]="jsonData" [padding]="0.35" bottomAxis="x" columns="y"
+                [transition]="true" transitionDuration="1000" transitionDelay="500">
+            </td-chart-bar>
+        </td-charts>
+        
+

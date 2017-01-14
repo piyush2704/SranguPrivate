@@ -1,0 +1,154 @@
+<div layout="column" layout-gt-sm="row">
+    <div flex-gt-xs="80">
+        <md-card>
+            <md-card-title>Ryangarret@gmail.com</md-card-title>
+            <md-card-subtitle>10/01/2017 07:30 PM</md-card-subtitle>
+            <md-divider></md-divider>
+            <md-tab-group color="primary">
+                <md-tab>
+                    <template md-tab-label>Web</template>
+                    <md-card-content>
+                        <div class="webData">
+                            <h3>Laptop</h3>
+                            <p>00:00:35 Seconds</p>
+                            <br><br><br><br><br>
+                        </div>
+
+                        <div class="WebSection">
+
+                            <img class="sampleImage" src="../../../assets/icons/sampleImage.png">
+                            <div class="webContainerText">
+                                <md-card-actions>
+                                    <a md-button buttonDisableFix color="primary" class="text-upper" [routerLink]="['/users']">
+                                        <span>View More</span>
+                                    </a>
+                                    <a md-button buttonDisableFix color="primary" class="text-upper" [routerLink]="['/users']">
+                                        <span>View More</span>
+                                    </a>
+                                </md-card-actions>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                    sapien nunc eget</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                    sapien nunc eget</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                    sapien nunc eget</p>
+                            </div>
+                        </div>
+                    </md-card-content>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>Mobile Web</template>
+                    <md-card-content>
+                        <div class="mobData">
+                            <h1>Mobile</h1>
+                            <p>00:00:35 Seconds</p>
+                        </div>
+                        <br>
+                        <div class="mobilesection">
+                            <img class="sampleImageMobile" src="../../../assets/icons/sampleImage.png">
+                            <div class="mobileContentText">
+                                <md-card-actions>
+                                    <a md-button buttonDisableFix color="primary" class="text-upper" [routerLink]="['/users']">
+                                        <span>View More</span>
+                                    </a>
+                                    <a md-button buttonDisableFix color="primary" class="text-upper" [routerLink]="['/users']">
+                                        <span>View More</span>
+                                    </a>
+                                </md-card-actions>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                    sapien nunc eget</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                    sapien nunc eget</p>
+
+
+
+                            </div>
+                        </div>
+                    </md-card-content>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>Social</template>
+                    <h1>Web</h1>
+                    <p>...</p>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>Social</template>
+                    <h1>Second tab content</h1>
+                    <p>...</p>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>Web</template>
+                    <h1>Web</h1>
+                    <p>...</p>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>Email</template>
+                    <h1>Second tab content</h1>
+                    <p>...</p>
+                </md-tab>
+            </md-tab-group>
+        </md-card>
+    </div>
+    <div flex-gt-xs="20">
+        <md-card>
+            <md-card-title>Events</md-card-title>
+            <md-card-subtitle>Explore the events</md-card-subtitle>
+            <td-search-box placeholder="Search here" (searchDebounce)="search($event)" flex>
+            </td-search-box>
+            <md-divider></md-divider>
+            <td-expansion-panel label="Label goes here" expand="true" [disabled]="disabled">
+                <template td-expansion-panel-label>
+                    <md-icon>tag_faces</md-icon>
+                    <span>Landing Page</span>
+                </template>
+                <div class="md-padding">
+                    <h3 class="md-subhead">Scroll Up</h3>
+                    <h3 class="md-subhead">scroll Down</h3>
+                    <h3 class="md-subhead">Clicked on Product Image</h3>
+                  
+                </div>
+            </td-expansion-panel>
+            <td-expansion-panel label="Label goes here" expand="true" [disabled]="disabled">
+                <template td-expansion-panel-label>
+                    <md-icon>tag_faces</md-icon>
+                    <span>Product Page</span>
+                </template>
+                <div class="md-padding">
+                    <h3 class="md-subhead">Scroll Up</h3>
+                    <h3 class="md-subhead">scroll Down</h3>
+                    <h3 class="md-subhead">Clicked on Product Image</h3>
+                   
+                </div>
+            </td-expansion-panel>
+            <td-expansion-panel label="Label goes here" expand="true" [disabled]="disabled">
+                <template td-expansion-panel-label>
+                    <md-icon>tag_faces</md-icon>
+                    <span>Cart</span>
+                </template>
+                <div class="md-padding">
+                    <h3 class="md-subhead">Scroll Up</h3>
+                    <h3 class="md-subhead">scroll Down</h3>
+                    <h3 class="md-subhead">Clicked on Product Image</h3>
+                    
+                </div>
+            </td-expansion-panel>
+        </md-card>
+    </div>

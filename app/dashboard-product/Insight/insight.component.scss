@@ -1,0 +1,54 @@
+.row
+{
+  width: 98%;
+  display: inline-block;
+  padding: 0px 0px 18px 6px;
+}
+.section
+{
+  width: 50%;
+  display: inline-block;
+  padding-bottom: 22px;
+}
+@media screen and (min-width: 1024px) {
+    
+}
+@media screen and (max-width: 768px) {
+  .section
+    {
+      width:100%;
+    }
+
+    }
+@media screen and (max-width: 600px) {
+   
+}
+@media screen and (max-width: 480px) {
+  
+}
+
+
+.insight-image
+{  width: 46px;
+  max-width: 13%;
+  height: auto;
+  margin-left: 10px;
+}
+.insightContent
+{
+  margin-left: 15px;
+  display:block;
+  font-size:15px;
+  padding-top:10px;
+  padding-top:10px;
+}
+.imageSpanClass {
+  font-family: Arial;
+  font-weight: 400;
+  font-style: normal;
+  color: #03A9F4;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  text-transform: uppercase;;
+}
