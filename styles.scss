@@ -1,0 +1,62 @@
+@import "theme";
+// You can add global styles to this file that will cascade like normal CSS
+
+// Active icon color in list nav
+md-nav-list {
+    [md-list-item].active {
+        md-icon[md-list-avatar] {
+            background-color: md-color($accent);
+            color: md-color($accent, default-contrast)
+        }
+        md-icon[md-list-icon] {
+            color: md-color($accent);
+        }
+    }
+}
+// Custom style for loading elements without height
+.will-load {
+    min-height: 80px;
+}
+// Href line height wasn't right for md-icon-button
+a[md-icon-button] {
+    line-height: 36px;
+}
+
+// Stretch tab labels until there is an attribute for it
+.md-tab-label {
+    flex-grow: 1;
+}
+.removeBack div div div span#backButton {
+    display: none;
+}
+
+Inherited from md-toolbar.md2.md-toolbar.md-primary
+
+.md-whiteframe-z1 md2 md-toolbar{
+
+    color: red;
+}
+.md-whiteframe-z1.md2.md-toolbar
+{
+display:none;
+}
+
+// Capitalize
+.text-capital {
+  text-transform: capitalize;
+}
+
+// Manage List layout overflow is too short
+td-layout-manage-list .md-sidenav-content > .md-content > .md-content {
+    padding-bottom: 140px;
+    
+}
+
+md-toolbar md-toolbar-row {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+}
